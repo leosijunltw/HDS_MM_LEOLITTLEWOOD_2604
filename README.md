@@ -2,7 +2,9 @@
 
 
 **Author:** Leo Littlewood (lsjl2@cam.ac.uk)
+
 **Institution:** University of Cambridge (MSt Healthcare Data Science) 
+
 **Module Title:** Applied Machine Learning for Healthcare Problem (Module 5)
 
 ---
@@ -80,16 +82,17 @@ A global random seed (`RANDOM_SEED = 42`) is set at the top of the notebook and 
 
 The notebook installs the latest versions of all packages automatically. The analysis was developed and tested with the following versions:
 
-Library | Version
-Python 3.9.6
-numpy 2.0.2
-pandas 2.3.3
-sklearn 1.6.1
-imblearn 0.12.4
-shap 0.49.1
-matplotlib 3.9.4
-seaborn 0.13.2
-scipy 1.13.1
+| Library | Version |
+|---|---|
+| Python | 3.9.6 |
+| numpy | 2.0.2 |
+| pandas | 2.3.3 |
+| scikit-learn | 1.6.1 |
+| imbalanced-learn | 0.12.4 |
+| shap | 0.49.1 |
+| matplotlib | 3.9.4 |
+| seaborn | 0.13.2 |
+| scipy | 1.13.1 |
 
 
 
