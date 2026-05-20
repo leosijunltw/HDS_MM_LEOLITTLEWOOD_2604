@@ -1,4 +1,5 @@
-# Diabetes Risk Machine Learning Prediction: Binary Classification of Diabetes Risk Using Logistic Regression and Random Forest Models
+# Diabetes Risk Machine Learning Prediction: 
+# Binary Classification of Diabetes Risk Using Logistic Regression and Random Forest Models
 
 
 **Author:** Leo Littlewood (lsjl2@cam.ac.uk)
