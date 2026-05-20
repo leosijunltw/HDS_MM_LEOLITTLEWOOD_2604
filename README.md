@@ -1,8 +1,9 @@
-# Applied Machine Learning for Healthcare: Diabetes Risk Classification Using the CDC BRFSS 2021 Dataset
+# Diabetes Risk Machine Learning Prediction: Binary Classification of Diabetes Risk Using Logistic Regression and Random Forest Models
 
-**Author:** Leo Littlewood | lsjl2@cam.ac.uk  
-**Institution:** University of Cambridge — Health Data Science MSt  
-**Module:** Module 5: Applied Machine Learning in Healthcare  
+
+**Author:** Leo Littlewood (lsjl2@cam.ac.uk)
+**Institution:** University of Cambridge (MSt Healthcare Data Science) 
+**Module Title:** Applied Machine Learning for Healthcare Problem (Module 5)
 
 ---
 
@@ -27,7 +28,7 @@ LR marginally outperformed RF in AUC-ROC (0.807 vs 0.802) on the test set, while
 
 ## Dataset
 
-The dataset used is the **CDC Behavioural Risk Factor Surveillance System (BRFSS) 2021**, accessed via Kaggle:
+The dataset used is the **CDC Behavioural Risk Factor Surveillance System (BRFSS) 2021**, accessed through Kaggle:
 
 > Teboul, A. (2022). *Diabetes Health Indicators Dataset (CDC BRFSS 2021)*. Kaggle.  
 > https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
@@ -38,7 +39,7 @@ The dataset is loaded automatically within the notebook directly from the reposi
 https://raw.githubusercontent.com/leosijunltw/HDS_MM_LEOLITTLEWOOD_2604/main/diabetes_binary_health_indicators_BRFSS2021.csv
 ```
 
-No manual download is required — simply run the notebook from top to bottom.
+Please run the notebook from top to bottom. No manual download is required. 
 
 ---
 
@@ -56,7 +57,7 @@ cd HDS_MM_LEOLITTLEWOOD_2604
 All required packages are installed automatically in Cell 2 of the notebook. Alternatively, install manually:
 
 ```bash
-pip install numpy matplotlib pandas scikit-learn imbalanced-learn shap seaborn
+pip install numpy matplotlib pandas scikit-learn imbalanced-learn shap seaborn scipy
 ```
 
 ### 3. Run the notebook
@@ -73,24 +74,24 @@ All outputs including plots, model metrics, and the comparison table will be gen
 
 A global random seed (`RANDOM_SEED = 42`) is set at the top of the notebook and passed explicitly to all stochastic components (train/test split, SMOTE, KMeans, RandomForest, RandomizedSearchCV, and the stability analysis). All results are fully reproducible across runs.
 
----
+
 
 ## Library Versions
 
 The notebook installs the latest versions of all packages automatically. The analysis was developed and tested with the following versions:
 
-| Library | Version |
-|---|---|
-| Python | 3.12+ |
-| numpy | 2.x |
-| pandas | 2.x |
-| scikit-learn | 1.x |
-| imbalanced-learn | 0.12.x |
-| shap | 0.46.x |
-| matplotlib | 3.x |
-| seaborn | 0.13.x |
+Library | Version
+Python 3.9.6
+numpy 2.0.2
+pandas 2.3.3
+sklearn 1.6.1
+imblearn 0.12.4
+shap 0.49.1
+matplotlib 3.9.4
+seaborn 0.13.2
+scipy 1.13.1
 
----
+
 
 ## Analysis Pipeline
 
