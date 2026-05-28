@@ -24,6 +24,7 @@ LR marginally outperformed RF in AUC-ROC (0.807 vs 0.802) on the test set, while
 
 ```
 ├── HDS_MM_LEOLITTLEWOOD_2604.ipynb   # Main analysis notebook
+├── diabetes_binary_health_indicators_BRFSS2021.csv       # Dataset
 ├── README.md                          # This file
 ```
 
@@ -103,9 +104,10 @@ The notebook follows this pipeline:
 
 1. **Data loading** — automatic download from GitHub URL
 2. **Feature selection and engineering** — all 21 BRFSS variables retained plus 6 engineered features (BMI_x_Age, CardioRisk_Score, DietScore, LifestyleRisk_Score, PoorHealth_Days, BMI_Inactive)
-3. **Preprocessing** — duplicate removal, SMOTE class balancing within CV folds, StandardScaler normalisation
+3. **Preprocessing** — duplicate removal, SMOTE class balancing within CV folds, StandardScaler normalisation (LR only)
 4. **Exploratory analysis** — PCA biplot, k-means clustering (k=3), correlation heatmap, class distribution
 5. **Model training** — Logistic Regression (GridSearchCV) and Random Forest (RandomizedSearchCV) with stratified 5-fold cross-validation
 6. **Evaluation** — AUC-ROC, F1, precision, recall, accuracy, PR-AUC, confusion matrices, ROC and PR curves, calibration curves, classification report
 7. **Stability analysis** — AUC-ROC across 10 random seeds
-8. **Explainability** — RF feature importances, LR coefficients, SHAP beeswarm and summary bar plots
+8. **Statistical comparison** — paired t-test and Wilcoxon signed-rank test across 10-seed AUC-ROC distributions
+9. **Explainability** — RF feature importances, LR coefficients, SHAP beeswarm and summary bar plots
