@@ -23,7 +23,7 @@ LR marginally outperformed RF in AUC-ROC (0.807 vs 0.802) on the test set, while
 ## Repository Contents
 
 ```
-├── HDS_MM_LEOLITTLEWOOD_2604.ipynb   # Main analysis notebook
+├── HDS_ML_LEOLITTLEWOOD_2604.ipynb   # Main analysis notebook
 ├── diabetes_binary_health_indicators_BRFSS2021.csv       # Dataset
 ├── README.md                          # This file
 ```
