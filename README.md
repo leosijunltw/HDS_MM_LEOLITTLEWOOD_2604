@@ -23,7 +23,7 @@ LR marginally outperformed RF in AUC-ROC (0.807 vs 0.802) on the test set, while
 ## Repository Contents
 
 ```
-├── HDS_ML_LEOLITTLEWOOD_2604.ipynb   # Main analysis notebook
+├── HDS_ML_LEOLITTLEWOOD_2604_code.ipynb   # Main analysis notebook
 ├── diabetes_binary_health_indicators_BRFSS2021.csv       # Dataset
 ├── README.md                          # This file
 ```
@@ -69,7 +69,7 @@ pip install numpy matplotlib pandas scikit-learn imbalanced-learn shap seaborn s
 Open the notebook in Jupyter or VS Code and run all cells from top to bottom:
 
 ```bash
-jupyter notebook HDS_MM_LEOLITTLEWOOD_2604.ipynb
+jupyter notebook HDS_ML_LEOLITTLEWOOD_2604_code.ipynb
 ```
 
 All outputs including plots, model metrics, and the comparison table will be generated automatically. Figures are saved to an `outputs/` folder created in the same directory.
